@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="contacts">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  	<script src="../Controller/main.js"></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+  </body>
+  <form ng-submit="login()" ng-controller="MainCtrl"><br>  
+  User ID:<br>
+  <input type="text" ng-model="uid" name="userid"><br>
+  Password:<br>
+  <input type="password" ng-model="pwd" name="password"><br><br>
+  <input type="submit" value="Submit"><br><br>
+  </form>
+  <form ng-submit="register()" ng-controller="MainCtrl"><br>  
+  New users register here:<br><br>
+  First Name:<br>
+  <input type="text" ng-model=fname name="firstname"><br>
+  Last Name:<br>
+  <input type="text" ng-model=lname name="lastname"><br>
+  Email:<br>
+  <input type="text" ng-model="mail" name="email"><br>
+  Password:<br>
+  <input type="password" ng-model="pass" name="password"><br><br>
+  <input type="submit" value="Register"><br><br>
+  </form>
+  <br>
+</html>
